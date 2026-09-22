@@ -1,0 +1,36 @@
+[project]
+name = "wine-analysis"
+version = "0.1.0"
+description = "Wine Quality Analysis - UCI Wine Quality datasets (red & white)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "scikit-learn>=1.4",
+    "statsmodels>=0.14",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.0",
+    "nbconvert>=7.0",
+    "ipykernel>=6.0",
+    "markdown>=3.10.3",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.9",
+]
+
+[tool.uv]
+managed = true
+
+[tool.hatch.build.targets.wheel]
+only-include = ["README.md"]
+packages = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

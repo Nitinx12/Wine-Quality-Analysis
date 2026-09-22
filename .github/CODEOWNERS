@@ -1,0 +1,7 @@
+# CODEOWNERS — Placeholder
+# Syntax: path @owner
+* @Nitinx12
+/scripts/ @Nitinx12
+/notebooks/ @Nitinx12
+/reports/ @Nitinx12
+/.github/ @Nitinx12
