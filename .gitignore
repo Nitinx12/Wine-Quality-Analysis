@@ -52,8 +52,6 @@ rsconnect/
 
 # --- Project generated outputs (keep repo clean) ---
 output/
-figures/
-*.png
 *.pdf
 *.html
 !report.tex
